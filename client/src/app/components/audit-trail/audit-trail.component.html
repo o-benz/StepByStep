@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Audit Trail</h2>
+    <div class="timeline">
+      <div class="line"></div>
+      <div class="events">
+        <ng-container *ngFor="let event of events">
+          <div class="event" [ngClass]="{'past': event.timestamp < currentDate, 'future': event.timestamp > currentDate}">
+            <div class="marker"></div>
+            <div class="details">
+              <div class="date">{{ event.timestamp | date:'medium' }}</div>
+              <div class="description">{{ event.message }}</div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about {
+    height: 100%;
+    width: 65%;
+    background-color: white;
+    opacity: 0.7;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    margin-top: 1%;
+    user-select: none;
+}
+
+.info-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+}
+
+.project-logo {
+    width: 8vmin;
+    height: auto;
+}
+
+h1 {
+    font-size: 7vmin;
+    margin: 0;
+}
+
+.creators {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    background-color: #add8e6;
+    background-image: linear-gradient(45deg, #fad4dc, #add8e6);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    animation: gradientAnimation 30s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

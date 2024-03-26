@@ -1,0 +1,40 @@
+.survey-button {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .survey-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .resource-list {
+    list-style-type: none;
+    padding: 0;
+  
+    .resource-item {
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background-color: #dfdede;
+
+        a {
+        color: #007bff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        transition: background-color 0.3s;
+        }
+
+        a:hover {
+        background-color: #f0f0f0;
+        text-decoration: underline;
+        }
+    }
+}

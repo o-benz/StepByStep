@@ -1,0 +1,37 @@
+<mat-horizontal-stepper>
+  <mat-step *ngFor="let step of field.fieldGroup; let index = index; let last = last">
+    <h1 class="title">{{ step.props?.label }}</h1>
+    <formly-field [field]="step"></formly-field>
+
+    <div class="buttons">
+      <button
+        matStepperPrevious
+        *ngIf="index !== 0"
+        class="backprev"
+        type="button"
+        [disabled]="!isValid(step)"
+      >
+        Back
+      </button>
+
+      <button
+        matStepperNext
+        *ngIf="!last"
+        class="backprev"
+        type="button"
+        [disabled]="!isValid(step)"
+      >
+        Next
+      </button>
+
+      <button
+        *ngIf="last"
+        class="backprev"
+        [disabled]="!form.valid"
+        type="submit"
+      >
+        {{ isModifyPage ? 'Modify Resident' : 'Create Resident' }}
+      </button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

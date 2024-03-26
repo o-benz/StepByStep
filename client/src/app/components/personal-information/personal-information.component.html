@@ -1,0 +1,38 @@
+<div class="profile-information-container">
+  <div class="column">
+    <div class="section profile">
+      <h2>Profile</h2>
+      <div *ngFor="let item of displayedInformation" class="item">
+        <span class="label">{{ item.label }}: </span>
+        <span class="value">{{ item.value }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="section contact-information">
+      <h2>Contact Information</h2>
+      <div *ngFor="let item of contactDetails" class="item">
+        <span class="label">{{ item.label }}: </span>
+        <span class="value">{{ item.value }}</span>
+      </div>
+    </div>
+    <div class="section significant-people">
+      <h2>Significant People</h2>
+      <div
+        *ngFor="let person of residentStub.significantPeople"
+        class="item significant-person"
+      >
+        <p>{{ person.name }}</p>
+        <p>{{ person.relationType }}</p>
+        <p>{{ person.phoneNumber }}</p>
+        <p>{{ person.email }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section current-care-giver">
+  <h2 class="item">Current Caregiver:</h2>
+  <div *ngFor="let item of caregiverDetails" class="item">
+    {{ item.value }}
+  </div>
+</div>

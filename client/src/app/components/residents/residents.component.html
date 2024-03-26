@@ -1,0 +1,19 @@
+<h2>Residents</h2>
+<div class="list">
+    <div *ngFor="let resident of residents" class="resident">
+        <div class="resident-info">
+            <div class="name">{{ resident.firstName }} {{ resident.lastName }}</div>
+            <div>Age: {{ getAgeFromBirthDate(resident.birthDate) }}</div>
+            <div>Email: {{ resident.email }}</div>
+        </div>
+        <div class="actions">
+            <button (click)="openChat(resident)">Chat</button>
+            <button (click)="modifyInfo(resident)">Modify Info</button>
+            <button (click)="viewDocuments(resident.id)">View Documents</button>
+            <button (click)="managePlans(resident.id)">Manage Plans</button>
+            <button (click)="endOfStay(resident.id)">End-Of-Stay</button>
+        </div>
+    </div>
+    <div *ngIf="!residents || residents.length === 0" class="no-residents">No residents found</div>
+    <div class="new-resident" (click)="createNewResident()">+</div>
+</div>

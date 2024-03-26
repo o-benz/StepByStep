@@ -1,0 +1,7 @@
+<button class="survey-button" (click)="openSurvey()">Fill out satisfaction survey</button>
+
+<ul class="resource-list">
+  <li *ngFor="let resource of resources" class="resource-item">
+    <a [href]="resource.url" target="_blank">{{ resource.name }}</a>
+  </li>
+</ul>

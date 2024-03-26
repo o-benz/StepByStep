@@ -1,0 +1,11 @@
+<body>
+    <app-header></app-header>
+    <div class="content-container">
+        <h2>Resident: {{  resident.firstName }}, {{ resident.lastName }}</h2>
+        <div class="list">
+            <div *ngFor="let document of documents" class="document" (click)="openDocument(document)">
+                {{ document }}
+            </div>
+        </div>
+    </div>
+</body>

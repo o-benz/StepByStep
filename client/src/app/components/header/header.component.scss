@@ -1,0 +1,48 @@
+header {
+    box-shadow: 0 0 5px #f8c0cb, 0 0 2px #f8c0cb;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    opacity: 0.7;
+    animation: dropIn 0.5s ease forwards;
+}
+
+@keyframes dropIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-right: 15px;
+    user-select: none;
+}
+
+.project-logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+    text-shadow: 0 0 10px #ffffff80;
+}
+
+header a {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+}

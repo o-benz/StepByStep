@@ -1,0 +1,8 @@
+<div class="dialog-wrapper">
+    <div class="dialog-content">
+      <h1 class="dialog-title">Create Resident</h1>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+      </form>
+    </div>
+</div>

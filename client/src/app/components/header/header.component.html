@@ -1,0 +1,14 @@
+<header>
+  <a [routerLink]="['/home']">
+    <img src="./assets/logo.png" alt="project logo" class="project-logo" />
+    <h1>StepByStep</h1>
+  </a>
+
+  <h2>
+    Hello {{ username }} 👋 -
+    <ng-container *ngIf="isResident(); else caregiverChat">
+      RESIDENT
+    </ng-container>
+    <ng-template #caregiverChat> CAREGIVER </ng-template>
+  </h2>
+</header>

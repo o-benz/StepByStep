@@ -1,0 +1,71 @@
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+::ng-deep .mat-step-icon-state-edit {
+  margin-left: 30px !important;
+}
+
+.backprev:disabled {
+  background-color: #999999;
+  &:hover {
+    background-color: #999999;
+  }
+}
+
+.backprev {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #2f7fcf;
+  width: 50%;
+  margin-top: 10px;
+  color: white;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #1a436b;
+  }
+}
+
+::ng-deep #formly_21_select_caregivers_0 {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep #formly_21_select_issues_1 {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="text"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="email"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="date"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="number"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="tel"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep input[type="password"] {
+  width: -webkit-fill-available !important;
+}
+
+::ng-deep select {
+  width: -webkit-fill-available !important;
+}

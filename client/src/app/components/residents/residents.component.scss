@@ -1,0 +1,76 @@
+h2 {
+    user-select: none;
+    margin-block-start: 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.resident {
+    border-radius: 20px;
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resident-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.actions button {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    font-size: 15px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-2px);
+    }
+    &:active {
+        transform: translateY(1px);
+    }
+}
+
+.no-residents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-resident {
+    cursor: pointer;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+    border: 1px solid #ccc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #4CAF50;
+}

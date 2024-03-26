@@ -1,0 +1,15 @@
+<div class="timeline">
+    <div class="line"></div>
+    <div class="events">
+      <ng-container *ngFor="let event of events">
+        <div class="event" [ngClass]="{'past': event.date < currentDate, 'future': event.date > currentDate}">
+          <div class="marker"></div>
+          <div class="details">
+            <div class="date">{{ event.date | date:'MMM dd, yyyy' }}</div>
+            <div class="description">{{ event.description }}</div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  

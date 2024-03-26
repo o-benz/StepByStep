@@ -1,0 +1,65 @@
+.container {
+    .timeline {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 20px; /* Adjust spacing as needed */
+    }
+  
+    .line {
+      width: 2px;
+      height: 100%;
+      background-color: #ccc;
+      position: absolute;
+      top: 0;
+    }
+  
+    .events {
+      width: -webkit-fill-available;
+      margin-left: 20px;
+    }
+  
+    .event {
+      width: -webkit-fill-available;
+      position: relative;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f3f3f3;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: flex-start;
+    }
+  
+    .marker {
+      width: 12px;
+      height: 12px;
+      background-color: #007bff;
+      border-radius: 50%;
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .event .details {
+      margin-left: 20px;
+    }
+  
+    .event .date {
+      font-weight: bold;
+    }
+  
+    .event .description {
+      margin-top: 8px;
+    }
+  
+    .event.past {
+      background-color: #e0e0e0;
+    }
+  
+    .event.future {
+      background-color: #fff;
+    }
+  }
+  

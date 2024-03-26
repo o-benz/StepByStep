@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.login-container {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    animation: appear 0.6s ease forwards;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.header {
+    margin-top: 10%;
+    user-select: none;
+}
+
+.info-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 10px;
+}
+
+.project-logo {
+    width: 8vmin;
+    height: auto;
+}
+
+h1 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 7vmin;
+    margin: 0;
+}
+
+.login {
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    align-items: center;
+}
+
+.options {
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4CAF50;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.option {
+    width: 50%;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.option.selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.username-input, .password-input {
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button {
+    margin-top: 20px;
+    user-select: none;
+    color: white;
+    background-color: #4CAF50;
+    border-radius: 50px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+        background-color: #3b7d3d;
+    }
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.lechainon-wrapper {
+    display: contents;
+}
+
+.lechainon-logo {
+    margin-top: -25px;
+    width: 250px;
+    margin-bottom: -25px;
+}
+
+.social-media-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.social-media-wrapper ul li {
+    margin: 0 30%;
+}
+
+.social-media-wrapper ul li a {
+    color: black;
+}
+
+.about {
+    color: black;
+}
+
+@media (max-width: 750px) {
+    .login-container{
+        width: 100%;
+    }
+}
+
+.error-message {
+    color: red;
+    font-size: 1.5vmin;
+    margin: 0;
+}

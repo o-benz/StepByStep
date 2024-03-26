@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="content-wrapper">
+  <div
+    class="content-container"
+    [ngClass]="{
+      'with-chat': selectedResident,
+      'without-chat': !selectedResident
+    }"
+  >
+    <div class="options-container">
+      <div class="options">
+        <button
+          *ngFor="let option of options"
+          class="option"
+          [ngClass]="{ selected: selectedOption === option }"
+          (click)="selectOption(option)"
+        >
+          {{ option }}
+        </button>
+      </div>
+    </div>
+
+    <div class="selected-option">
+      <app-residents
+        (openChatRequest)="onOpenChat($event)"
+        *ngIf="selectedOption === 'Residents'"
+      ></app-residents>
+      <app-statistics *ngIf="selectedOption === 'Statistics'"></app-statistics>
+      <app-calendar *ngIf="selectedOption === 'Calendar'"></app-calendar>
+      <app-audit-trail
+        *ngIf="selectedOption === 'Audit Trail'"
+      ></app-audit-trail>
+    </div>
+  </div>
+  <app-chat
+    *ngIf="selectedResident"
+    [resident]="selectedResident"
+    (closeChat)="closeChat()"
+    class="chat-box"
+  ></app-chat>
+</div>

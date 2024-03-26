@@ -1,0 +1,29 @@
+name: Client Image CI
+permissions: write-all
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'common/**'
+      - 'client/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'common/**'
+      - 'client/**'
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: |
+        docker login --username ${{github.actor}} --password ${{ secrets.GITHUB_TOKEN }} ghcr.io
+        docker build . -f ./client/Dockerfile --platform linux/amd64 --tag ghcr.io/ghalichraibi/code-to-give-2024-client:latest
+        docker push ghcr.io/ghalichraibi/code-to-give-2024-client:latest

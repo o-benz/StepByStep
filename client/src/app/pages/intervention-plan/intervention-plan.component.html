@@ -1,0 +1,99 @@
+<body style="height:100%; width:100%; overflow:auto;">
+    <app-header></app-header>
+    <div class="content-container">
+        <h2>Intervention Plan</h2>
+        <!--Display intervention plan.-->
+        <div *ngIf="plan">
+            <div class="intervention-plan">
+                <div class="intervention-plan-info">
+                    <div>Resident: {{ resident.firstName }} {{ resident.lastName }}</div>
+                    <div>First Visit? {{ plan.isFirstVisit ? '✔' : '❌' }}</div>
+                    <div>Start Date: {{ plan.planStart| date: 'MM/dd/yyyy' }}</div>
+                    <div>Beginning of stay: {{ plan.startOfStay| date: 'MM/dd/yyyy' }}</div>
+                    <div>End of stay: {{plan.endOfStay | date: 'MM/dd/yyyy' }}</div>
+                    <!-- Display objectives -->
+                    <div *ngIf="plan.objectives && plan.objectives.length > 0">
+                        <h3>Objectives</h3>
+                        <div *ngFor="let objective of plan.objectives; let i = index">
+                            <div class="objective">
+                                <h4>{{ i + 1 }}. {{ objective.title }}</h4>
+                                <p>Description: {{ objective.description }}</p>
+                                <p>Term: {{ objective.term | json }}</p>
+                                <p>Status: {{ objective.status }}</p>
+                                <p *ngIf="objective.means">Means: {{ objective.means }}</p>
+                                <div *ngIf="objective.healthFactor && objective.healthFactor.length > 0">
+                                    Health Factors:
+                                    <ul>
+                                        <li *ngFor="let factor of objective.healthFactor">{{ factor | json }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Display interventions -->
+                    <div *ngIf="plan.interventions && plan.interventions.length > 0">
+                        <h3>Interventions</h3>
+                        <div *ngFor="let intervention of plan.interventions; let i = index">
+                            <div class="intervention">
+                                <h4>{{ i + 1 }}. {{ intervention.title }}</h4>
+                                <p>Description: {{ intervention.description }}</p>
+                                <p>Date: {{ intervention.date | date: 'MM/dd/yyyy' }}</p>
+                                <p>Employee ID: {{ intervention.employeeId }}</p>
+                                <div *ngIf="intervention.objectives && intervention.objectives.length > 0">
+                                    Associated Objectives:
+                                    <ul>
+                                        <li *ngFor="let objective of intervention.objectives">{{ objective.title }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Display notes -->
+                    <div *ngIf="plan.notes && plan.notes.length > 0">
+                        <h3>Notes</h3>
+                        <div *ngFor="let note of plan.notes; let i = index">
+                            <div class="note">
+                                <h4>{{ i + 1 }}. {{ note.title }}</h4>
+                                <p>Type: {{ note.type }}</p>
+                                <p>Date: {{ note.date | date: 'MM/dd/yyyy' }}</p>
+                                <p>Details: {{ note.details }}</p>
+                                <p>Observations: {{ note.observations }}</p>
+                                <p>Employee ID: {{ note.employeeId }}</p>
+                                <p>Reason of Contact: {{ note.reasonOfContact }}</p>
+                                <p>Motives: {{ note.motives }}</p>
+                                <div *ngIf="note.interventions && note.interventions.length > 0">
+                                    Associated Interventions:
+                                    <ul>
+                                        <li *ngFor="let intervention of note.interventions">{{ intervention.title }}</li>
+                                    </ul>
+                                </div>
+                                <div *ngIf="note.objectives && note.objectives.length > 0">
+                                    Associated Objectives:
+                                    <ul>
+                                        <li *ngFor="let objective of note.objectives">{{ objective.title }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Display treatment team -->
+                    <div *ngIf="plan.treatmentTeam && plan.treatmentTeam.length > 0">
+                        <h3>Treatment Team</h3>
+                        <div *ngFor="let staff of plan.treatmentTeam; let i = index">
+                            <div class="staff">
+                                <p>Name: {{ staff.name }}</p>
+                                <p *ngIf="staff.phoneNumber">Phone Number: {{ staff.phoneNumber }}</p>
+                                <p *ngIf="staff.email">Email: {{ staff.email }}</p>
+                                <p *ngIf="staff.address">Address: {{ staff.address }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button (click)="modifyPlan(plan)">Modify Plan</button>
+                    <button (click)="deletePlan(plan)">Delete Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

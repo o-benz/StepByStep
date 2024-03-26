@@ -1,0 +1,12 @@
+<body>
+    <div class="admin-container">
+        <h2>Admin Dashboard</h2>
+        <div class="button-container">
+            <button class="btn" id="delete-users" (click)="deleteAllUsers()" >Delete All Users</button>
+            <button class="btn" id="delete-plans" (click)="deleteAllPlans()">Delete All Plans</button>
+        </div>
+        <span *ngIf="resultMessage">
+            Result: {{ resultMessage }} 
+        </span> 
+    </div>
+</body>

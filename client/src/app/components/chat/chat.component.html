@@ -1,0 +1,40 @@
+<div class="chat-area-container">
+  <h1 class="chat-area">
+    <ng-container *ngIf="isResident(); else caregiverChat">
+      Chat with My Caregivers
+    </ng-container>
+    <ng-template #caregiverChat>
+      Chat with {{ resident.firstName }}
+    </ng-template>
+    <button class="close-chat" (click)="onChatClose()" *ngIf="!isResident()">
+      X
+    </button>
+  </h1>
+  <div class="chat-history">
+    <div
+      #messageList
+      class="message-box"
+      *ngFor="let message of roomMessages"
+      [class.sent]="isSent(message)"
+      [class.received]="!isSent(message)"
+    >
+      <div class="message">
+        <div class="message-sender">
+          {{ message.senderName }}
+        </div>
+        <div class="message-content">{{ message.content }}</div>
+        <div class="message-time">
+          {{ message.timestamp | date: "shortTime" }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chat-input">
+    <input
+      type="text"
+      placeholder="Enter your message..."
+      [(ngModel)]="roomMessage"
+    />
+    <button type="submit" (click)="sendToRoom()">Send</button>
+  </div>
+</div>

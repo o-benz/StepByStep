@@ -1,0 +1,132 @@
+<body>
+  <div class="login-container">
+    <div class="header">
+      <a [routerLink]="['/home']" class="info-project">
+        <img src="./assets/logo.png" alt="project logo" class="project-logo" />
+        <h1>StepByStep</h1>
+      </a>
+    </div>
+
+    <div class="login">
+      <div class="options">
+        <button
+          class="option"
+          [ngClass]="{ selected: selectedOption === 'caregiver' }"
+          (click)="selectedOption = 'caregiver'"
+        >
+          Caregiver
+        </button>
+        <button
+          class="option"
+          [ngClass]="{ selected: selectedOption === 'resident' }"
+          (click)="selectedOption = 'resident'"
+        >
+          Resident
+        </button>
+      </div>
+
+      <div class="login-form">
+        <input
+          type="text"
+          placeholder="Email"
+          class="username-input"
+          [(ngModel)]="email"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          class="password-input"
+          [(ngModel)]="password"
+        />
+        <span class="error-message">
+          {{ errorMessage }}
+        </span>
+        <button
+          class="login-button"
+          (click)="onLogin()"
+          [disabled]="!email || !password"
+        >
+          Login
+        </button>
+      </div>
+      <a href="#" class="forgot-password">Forgot password?</a>
+    </div>
+
+    <div class="footer">
+      <a class="lechainon-wrapper" href="https://lechainon.org/en/">
+        <img src="./assets/flc.png" alt="lechainon" class="lechainon-logo" />
+      </a>
+      <div class="social-media-wrapper">
+        <ul>
+          <li class="facebook-link">
+            <a
+              href="https://www.facebook.com/lechainonmontreal/"
+              target="_blank"
+              title="Facebook Le Chaînon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="26"
+                height="26"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 50 50"
+              >
+                <path
+                  fill="currentColor"
+                  d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="linkedin-link">
+            <a
+              href="https://www.linkedin.com/company/le-cha%C3%AEnon-association-d-entraide/?originalSubdomain=ca"
+              target="_blank"
+              title="Linkedin Le Chaînon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="18"
+                height="17.28"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 25 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5.706 7.798V24H.311V7.798zm.343-5.002l.002.098c0 .749-.318 1.423-.826 1.895l-.002.001A3.067 3.067 0 0 1 3 5.59h.007h-.033a2.945 2.945 0 0 1-2.162-.801l.001.001a2.67 2.67 0 0 1-.815-1.998v.004l-.001-.069c0-.762.324-1.448.841-1.929L.84.797A3.066 3.066 0 0 1 3.045.001h-.006a2.983 2.983 0 0 1 2.177.795L5.214.794a2.72 2.72 0 0 1 .835 1.964V2.8v-.002zm19.062 11.92V24h-5.378v-8.665a4.702 4.702 0 0 0-.675-2.71l.012.021a2.325 2.325 0 0 0-2.076-.972h.008a2.634 2.634 0 0 0-1.73.568l.006-.004a3.494 3.494 0 0 0-1.032 1.375l-.008.023a3.862 3.862 0 0 0-.179 1.331v-.007v9.042H8.681q.033-6.523.033-10.578t-.016-4.839L8.682 7.8h5.378v2.354h-.033c.214-.345.435-.644.678-.924l-.008.009c.281-.309.583-.588.908-.838l.016-.012a4.212 4.212 0 0 1 1.392-.704l.03-.007a6.347 6.347 0 0 1 1.797-.254h.079h-.004a5.792 5.792 0 0 1 4.493 1.851l.003.004q1.702 1.856 1.702 5.436z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li class="instagram-link">
+            <a
+              href="https://www.instagram.com/magasinlechainon/?hl=en"
+              target="_blank"
+              title="Instagram Le Chaînon"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                role="img"
+                width="26"
+                height="26"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 1024 1024"
+              >
+                <path
+                  fill="currentColor"
+                  d="M512 306.9c-113.5 0-205.1 91.6-205.1 205.1S398.5 717.1 512 717.1S717.1 625.5 717.1 512S625.5 306.9 512 306.9zm0 338.4c-73.4 0-133.3-59.9-133.3-133.3S438.6 378.7 512 378.7S645.3 438.6 645.3 512S585.4 645.3 512 645.3zm213.5-394.6c-26.5 0-47.9 21.4-47.9 47.9s21.4 47.9 47.9 47.9s47.9-21.3 47.9-47.9a47.84 47.84 0 0 0-47.9-47.9zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zm-88 235.8c-7.3 18.2-16.1 31.8-30.2 45.8c-14.1 14.1-27.6 22.9-45.8 30.2C695.2 844.7 570.3 840 512 840c-58.3 0-183.3 4.7-235.9-16.1c-18.2-7.3-31.8-16.1-45.8-30.2c-14.1-14.1-22.9-27.6-30.2-45.8C179.3 695.2 184 570.3 184 512c0-58.3-4.7-183.3 16.1-235.9c7.3-18.2 16.1-31.8 30.2-45.8s27.6-22.9 45.8-30.2C328.7 179.3 453.7 184 512 184s183.3-4.7 235.9 16.1c18.2 7.3 31.8 16.1 45.8 30.2c14.1 14.1 22.9 27.6 30.2 45.8C844.7 328.7 840 453.7 840 512c0 58.3 4.7 183.2-16.2 235.8z"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a [routerLink]="['/about']" class="about">About StepByStep</a>
+    </div>
+  </div>
+</body>

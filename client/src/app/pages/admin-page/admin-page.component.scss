@@ -1,0 +1,62 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.admin-container {
+    background-color: #ffffff;
+    padding: 60px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Increased gap */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.btn {
+    background-image: linear-gradient(145deg, #007bff, #004c8c);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 20px 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-image: linear-gradient(145deg, #005cbf, #003865);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.notification-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

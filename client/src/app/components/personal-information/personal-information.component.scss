@@ -1,0 +1,58 @@
+.profile-information-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    user-select: none;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.section {
+    text-align: center;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.value {
+    text-align: right;
+}
+
+.current-care-giver{
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.significant-people {
+    height: 150px;
+}
+
+.significant-person{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
