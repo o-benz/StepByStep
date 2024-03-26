@@ -49,6 +49,8 @@ Le Chaînon Foundation, founded in 1932, is dedicated to welcoming women in diff
 
 StepByStep is a comprehensive web platform designed to streamline the creation, modification, and personalization of intervention plans for residents of Le Chaînon Foundation. It offers a range of features to facilitate efficient communication between caregivers and residents, track progress, and provide necessary resources and support.
 
+[Check out the website!](https://api.rustaheat.co/)
+
 ### Features
 
 #### Interactively Create and Modify Plans
@@ -163,3 +165,5 @@ StepByStep is the result of the collaborative effort of:
 - Ihsane Majdoubi
 - Nassour Nassour
 - Philippe Tsoy
+
+![image](https://github.com/o-benz/StepByStep/assets/104547346/8f42664c-c7fc-4a17-9dda-c68cbad98953)
