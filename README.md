@@ -166,4 +166,192 @@ StepByStep is the result of the collaborative effort of:
 - Nassour Nassour
 - Philippe Tsoy
 
-![image](https://github.com/o-benz/StepByStep/assets/104547346/8f42664c-c7fc-4a17-9dda-c68cbad98953)
+---
+<ol class="contrib-data list-style-none"><li class="contrib-person float-left col-6 my-2 pr-2">
+  <span class="d-block Box">
+    <h3 class="border-bottom p-2 lh-condensed">
+      <a data-hovercard-type="user" data-hovercard-url="/users/o-benz/hovercard" href="/o-benz" class="d-inline-block mr-2 float-left">
+        <img src="https://avatars.githubusercontent.com/u/104547346?s=60&amp;v=4" class="avatar avatar-user" alt="o-benz" width="38" height="38">
+      </a>
+      <span class="f5 text-normal color-fg-muted float-right">#1</span>
+      <a data-hovercard-type="user" data-hovercard-url="/users/o-benz/hovercard" class="text-normal" href="/o-benz">o-benz</a>
+      <span class="f6 d-block color-fg-muted">
+        <span class="cmeta">
+          <div>
+            <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=o-benz" class="Link--secondary text-normal">52 commits</a>
+            <span class="additions-deletions ">
+              &nbsp;&nbsp;
+              <span class="color-fg-success text-normal">2,995 ++</span>
+              &nbsp;&nbsp;
+              <span class="color-fg-danger text-normal">1,478 --</span>
+            </span>
+          </div>
+        </span>
+      </span>
+    </h3>
+</span>
+</li><li class="contrib-person float-left col-6 my-2 pl-2">
+  <span class="d-block Box">
+    <h3 class="border-bottom p-2 lh-condensed">
+      <a data-hovercard-type="user" data-hovercard-url="/users/celidur/hovercard" href="/celidur" class="d-inline-block mr-2 float-left">
+        <img src="https://avatars.githubusercontent.com/u/66182659?s=60&amp;v=4" class="avatar avatar-user" alt="celidur" width="38" height="38">
+      </a>
+      <span class="f5 text-normal color-fg-muted float-right">#2</span>
+      <a data-hovercard-type="user" data-hovercard-url="/users/celidur/hovercard" class="text-normal" href="/celidur">celidur</a>
+      <span class="f6 d-block color-fg-muted">
+        <span class="cmeta">
+          <div>
+            <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=celidur" class="Link--secondary text-normal">20 commits</a>
+            <span class="additions-deletions ">
+              &nbsp;&nbsp;
+              <span class="color-fg-success text-normal">21,313 ++</span>
+              &nbsp;&nbsp;
+              <span class="color-fg-danger text-normal">20,453 --</span>
+            </span>
+          </div>
+        </span>
+      </span>
+    </h3>
+ </span>
+</li><li class="contrib-person float-left col-6 my-2 pr-2">
+  <span class="d-block Box">
+    <h3 class="border-bottom p-2 lh-condensed">
+      <a data-hovercard-type="user" data-hovercard-url="/users/ghalichraibi/hovercard" href="/ghalichraibi" class="d-inline-block mr-2 float-left">
+        <img src="https://avatars.githubusercontent.com/u/59808454?s=60&amp;v=4" class="avatar avatar-user" alt="ghalichraibi" width="38" height="38">
+      </a>
+      <span class="f5 text-normal color-fg-muted float-right">#3</span>
+      <a data-hovercard-type="user" data-hovercard-url="/users/ghalichraibi/hovercard" class="text-normal" href="/ghalichraibi">ghalichraibi</a>
+      <span class="f6 d-block color-fg-muted">
+        <span class="cmeta">
+          <div>
+            <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=ghalichraibi" class="Link--secondary text-normal">15 commits</a>
+            <span class="additions-deletions ">
+              &nbsp;&nbsp;
+              <span class="color-fg-success text-normal">54,946 ++</span>
+              &nbsp;&nbsp;
+              <span class="color-fg-danger text-normal">997 --</span>
+            </span>
+          </div>
+        </span>
+      </span>
+    </h3>
+ </span>
+</li><li class="contrib-person float-left col-6 my-2 pl-2">
+  <span class="d-block Box">
+    <h3 class="border-bottom p-2 lh-condensed">
+      <a data-hovercard-type="user" data-hovercard-url="/users/NassourNassourPoly/hovercard" href="/NassourNassourPoly" class="d-inline-block mr-2 float-left">
+        <img src="https://avatars.githubusercontent.com/u/98135662?s=60&amp;v=4" class="avatar avatar-user" alt="NassourNassourPoly" width="38" height="38">
+      </a>
+      <span class="f5 text-normal color-fg-muted float-right">#4</span>
+      <a data-hovercard-type="user" data-hovercard-url="/users/NassourNassourPoly/hovercard" class="text-normal" href="/NassourNassourPoly">NassourNassourPoly</a>
+      <span class="f6 d-block color-fg-muted">
+        <span class="cmeta">
+          <div>
+            <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=NassourNassourPoly" class="Link--secondary text-normal">8 commits</a>
+            <span class="additions-deletions ">
+              &nbsp;&nbsp;
+              <span class="color-fg-success text-normal">484 ++</span>
+              &nbsp;&nbsp;
+              <span class="color-fg-danger text-normal">152 --</span>
+            </span>
+          </div>
+        </span>
+      </span>
+    </h3>
+  </li>
+  <li class="contrib-person float-left col-6 my-2 pr-2">
+    <span class="d-block Box">
+      <h3 class="border-bottom p-2 lh-condensed">
+        <a data-hovercard-type="user" data-hovercard-url="/users/brsmaria/hovercard" href="/brsmaria" class="d-inline-block mr-2 float-left">
+          <img src="https://avatars.githubusercontent.com/u/113062234?s=60&amp;v=4" class="avatar avatar-user" alt="brsmaria" width="38" height="38">
+        </a>
+        <span class="f5 text-normal color-fg-muted float-right">#5</span>
+        <a data-hovercard-type="user" data-hovercard-url="/users/brsmaria/hovercard" class="text-normal" href="/brsmaria">brsmaria</a>
+        <span class="f6 d-block color-fg-muted">
+          <span class="cmeta">
+            <div>
+              <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=brsmaria" class="Link--secondary text-normal">5 commits</a>
+              <span class="additions-deletions ">
+                &nbsp;&nbsp;
+                <span class="color-fg-success text-normal">953 ++</span>
+                &nbsp;&nbsp;
+                <span class="color-fg-danger text-normal">12 --</span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </h3>
+  </li>
+  <li class="contrib-person float-left col-6 my-2 pl-2">
+    <span class="d-block Box">
+      <h3 class="border-bottom p-2 lh-condensed">
+        <a data-hovercard-type="user" data-hovercard-url="/users/lazureetienne/hovercard" href="/lazureetienne" class="d-inline-block mr-2 float-left">
+          <img src="https://avatars.githubusercontent.com/u/47014155?s=60&amp;v=4" class="avatar avatar-user" alt="lazureetienne" width="38" height="38">
+        </a>
+        <span class="f5 text-normal color-fg-muted float-right">#6</span>
+        <a data-hovercard-type="user" data-hovercard-url="/users/lazureetienne/hovercard" class="text-normal" href="/lazureetienne">lazureetienne</a>
+        <span class="f6 d-block color-fg-muted">
+          <span class="cmeta">
+            <div>
+              <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=lazureetienne" class="Link--secondary text-normal">2 commits</a>
+              <span class="additions-deletions ">
+                &nbsp;&nbsp;
+                <span class="color-fg-success text-normal">579 ++</span>
+                &nbsp;&nbsp;
+                <span class="color-fg-danger text-normal">21 --</span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </h3>
+    </span>
+  </li>
+  <li class="contrib-person float-left col-6 my-2 pr-2">
+    <span class="d-block Box">
+      <h3 class="border-bottom p-2 lh-condensed">
+        <a data-hovercard-type="user" data-hovercard-url="/users/AYYANARK/hovercard" href="/AYYANARK" class="d-inline-block mr-2 float-left">
+          <img src="https://avatars.githubusercontent.com/u/63237066?s=60&amp;v=4" class="avatar avatar-user" alt="AYYANARK" width="38" height="38">
+        </a>
+        <span class="f5 text-normal color-fg-muted float-right">#7</span>
+        <a data-hovercard-type="user" data-hovercard-url="/users/AYYANARK/hovercard" class="text-normal" href="/AYYANARK">AYYANARK</a>
+        <span class="f6 d-block color-fg-muted">
+          <span class="cmeta">
+            <div>
+              <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=AYYANARK" class="Link--secondary text-normal">1 commit</a>
+              <span class="additions-deletions ">
+                &nbsp;&nbsp;
+                <span class="color-fg-success text-normal">143 ++</span>
+                &nbsp;&nbsp;
+                <span class="color-fg-danger text-normal">11 --</span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </h3>
+    </span>
+  </li>
+  <li class="contrib-person float-left col-6 my-2 pl-2">
+    <span class="d-block Box">
+      <h3 class="border-bottom p-2 lh-condensed">
+        <a data-hovercard-type="user" data-hovercard-url="/users/Ihsane03/hovercard" href="/Ihsane03" class="d-inline-block mr-2 float-left">
+          <img src="https://avatars.githubusercontent.com/u/113052273?s=60&amp;v=4" class="avatar avatar-user" alt="Ihsane03" width="38" height="38">
+        </a>
+        <span class="f5 text-normal color-fg-muted float-right">#8</span>
+        <a data-hovercard-type="user" data-hovercard-url="/users/Ihsane03/hovercard" class="text-normal" href="/Ihsane03">Ihsane03</a>
+        <span class="f6 d-block color-fg-muted">
+          <span class="cmeta">
+            <div>
+              <a href="https://github.com/ghalichraibi/code-to-give-2024/commits?author=Ihsane03" class="Link--secondary text-normal">1 commit</a>
+              <span class="additions-deletions ">
+                &nbsp;&nbsp;
+                <span class="color-fg-success text-normal">158 ++</span>
+                &nbsp;&nbsp;
+                <span class="color-fg-danger text-normal">2 --</span>
+              </span>
+            </div>
+          </span>
+        </span>
+      </h3>
+    </span>
+  </li>
+</ol>
